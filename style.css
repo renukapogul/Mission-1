@@ -25,6 +25,7 @@ body{
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin:5px;
 
 }
 .container{
@@ -150,6 +151,70 @@ body{
         width: 120%;
     }
 
+/* email subscribe styles*/
+
+.text__x1{
+    font-size:40px;
+    color:#1d3557;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.email__subscribe__container {
+    width: 100%;
+    margin-top: 30px;
+    padding:15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.email__subscribe__input__field{
+    display: flex;
+    align-items: center;
+} 
+
+.email__input {
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+.email__input::placeholder{
+    color:#bdbcbc;
+}
+
+/*Quote image overlay*/
+.quote__image__overlay__container{
+    position: relative;
+    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+    center center / cover no-repeat;
+}
+
+.quote__image__overlay_{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+}
+
+.quote_image_text{
+    color: #fff;
+    z-index: 3;
+    margin: 0 1rem;
+    text-align: center;
+}
 
 @media (min-width:768px){
     .navbar{
@@ -224,9 +289,18 @@ body{
     .restaurants__flex{
         width: 100%;
         margin: 5px;
-
-
     }
+    .email__subscribe__container {
+        justify-content: center;
+        display: flex;
+    }
+    .quote__image__overlay__container, .quote__image__overlay_{
+        height: 250px;
+    }
+    .quote_image_text{
+        font-size: 2rem;
+    }
+
 
 }
 
@@ -234,8 +308,6 @@ body{
     .container{
         max-width: 900px;
     }
-    
-
     .hero__description{
         width: 100%;
     }
@@ -252,7 +324,12 @@ body{
     .restaurants__container{
         margin-top: 30px;
     }
-;
+
+    .quote__image__overlay__container, .quote__image__overlay_{
+        height: 300px;
+    }
+    
+
 }
 @media(min-width:1400px){
     .container{
